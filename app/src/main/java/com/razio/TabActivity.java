@@ -18,11 +18,13 @@ public class TabActivity extends FragmentActivity {
 
     ViewPager viewPager;
     TabLayout tabLayout;
+    android.support.v7.app.ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab);
+
 
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
@@ -41,4 +43,6 @@ public class TabActivity extends FragmentActivity {
 
 
     }
+
+
 }
